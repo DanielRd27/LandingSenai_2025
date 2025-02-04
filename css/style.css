@@ -23,5 +23,263 @@ body {
 }
 
 /* Container */
-
+.container {
+    max-width: 1120px;
+    margin: auto;
+}
 /* Construir CSS restante (Aqui) */
+
+/* Geral */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--texto-claro);
+}
+
+a:hover {
+    color: var(--texto-cinza);
+}
+
+/* Header */
+
+header {
+    background-color: var(--cor-primaria);
+}
+
+/* Logo */
+header img {
+    width: 7rem;
+    height: auto;
+    margin-left: 1rem;
+}
+
+header .container {
+    display: flex;
+
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-item-4 {
+    background-color: #A259F7;
+    padding: 0rem 0.5rem;
+
+    border-radius: 4px;
+}
+
+/* ______________________________________- */
+/* Main sections */
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 14vw;
+    height: 45vw;
+
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/assets/imagem-fundo-banner.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-section h1 {
+    font-size: 3rem;
+}
+
+.main-section hr {
+    width: 10%;
+    border-color: var(--cor-destaque);
+    margin-bottom: 0.3rem;  
+}
+
+.main-section p {
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+.main-section img {
+    width: 2.5rem;
+    height: auto;
+    margin-top: 2rem;
+}
+
+/* _____________________________________ */
+/* Section - sobre */
+
+.amarelo {
+    color: var(--cor-destaque);
+}
+
+.sobre-section h1 {
+    color: var(--cor-primaria);
+
+    padding: 1rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+
+.sobre-section {
+    background-color: rgb(25, 16, 19);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3.5rem;
+}
+
+.conteudo-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.conteudo-sobre article {
+    width: 33%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.conteudo-sobre article span {
+    margin-bottom: 0.3rem;
+}
+
+.conteudo-sobre img {
+    width: 400px;
+    border-radius: 8px;
+}
+
+.conteudo-sobre p {
+    color: var(--texto-cinza);
+    font-size: 0.8rem;
+}
+
+/* ____________________________--- */
+/* end section */
+/* cards */
+
+.card {
+    background-color: rgb(34, 22, 26);
+
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+}
+
+.dados-article {
+    display: flex;
+
+    justify-content: space-around;
+
+    margin:     4rem 8rem;
+}
+
+.dados-article span {
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.card p {
+    background-color: var(--fundo-escuro);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 5px;
+}
+
+/* ______________________________________________ */
+
+.end-section h1 {
+    color: var(--cor-primaria);
+
+    padding: 1rem;
+    font-size: 2rem;
+
+    text-align: center;
+}
+
+.endereco-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 8rem;
+}
+
+.endereco-article img {
+    width: 15rem;
+    border-radius: 5px;
+}
+
+.endereco-article p {
+    width: 13rem;
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    text-align: center;
+    padding: 1rem;
+    font-size: 14px;
+    margin-top: 3rem;
+}
+
+
+@media screen and (max-width:768px) {
+    
+    .mouse-down {
+        display: none;
+    }
+
+    .conteudo-sobre img {
+        width: 300px;
+    }
+
+    .dados-article {
+        justify-content: space-between;
+        margin: 4rem 4rem;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .endereco-article {
+        margin: 4rem 4rem;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
